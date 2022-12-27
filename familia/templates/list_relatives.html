@@ -1,0 +1,17 @@
+<h1> Lista de parientes </h1>
+
+   {% for relative in relatives%}
+
+<p> Nombre:  {{relative.name}} </p>
+<p> Fecha de nacimiento: {{relative.birth}} </p>
+
+{% if relative.alive == True %}
+<p> Esta vivo </p>
+
+{% else %}
+<p> Esta muerto </p>
+{% endif %}
+
+
+
+   {% endfor %}
